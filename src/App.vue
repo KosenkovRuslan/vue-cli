@@ -1,28 +1,35 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="wrapper">
+    <!-- Header -->
+    <header>
+      <div class="navbar">
+        <div class="container">
+          <div class="navbar-content">
+            <div class="logo">VUECLI</div>
+            <ul class="navbar-list">
+              <li class="navbar-item">
+                <a class="navbar-link">Home</a>
+              </li>
+              <li class="navbar-item">
+                <a class="navbar-link">Example</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <router-view></router-view>
+
+    <!-- Footer -->
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  }
+  components: {},
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+<style></style>
